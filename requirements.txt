@@ -1,0 +1,6 @@
+re
+numpy
+PIL
+ultralytics
+pytesseract
+cv2
