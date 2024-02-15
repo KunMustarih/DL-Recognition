@@ -1,0 +1,7 @@
+path: C:/Users/meloo/Desktop/DL Webcam
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 9
+names: ['Address', 'Class', 'DOB', 'Exp date', 'First name', 'Issue date', 'Last name', 'License number', 'Sex']

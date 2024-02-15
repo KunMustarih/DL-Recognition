@@ -1,0 +1,97 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px; /* Base font size */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 2em; /* Example of responsive font size using em */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%; /* Example of responsive input width */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Example of responsive button width */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%; /* Table width set to 100% for responsiveness */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-size: 1em; /* Example of responsive font size using em */
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    input[type="file"] {
+        width: 50%;
+    }
+
+    button[type="submit"] {
+        width: 50%;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    input[type="file"] {
+        width: 40%;
+    }
+
+    button[type="submit"] {
+        width: 40%;
+    }
+}
+
+/* Phone styles */
+@media (max-width: 767px) {
+    input[type="file"],
+    button[type="submit"] {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
