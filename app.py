@@ -1,10 +1,6 @@
 from flask import Flask, render_template,request
-from pytesseract import pytesseract
-
 from licenseTest import perform_ocr,process_image
 app = Flask(__name__, static_url_path='/static')
-
-pytesseract.pystesseract.tesseract_cmd = "/app/.apt/usr/bin/tesseract"
 
 
 @app.route("/")
